@@ -11,3 +11,67 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-date {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    height: 400px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .story-icon {
+    font-size: 3rem;
+  }
+
+  .story-content {
+    font-size: 1rem;
+  }
+
+  .gallery-img {
+    height: 200px;
+  }
+
+  .team-card {
+    margin-bottom: 1rem;
+  }
+
+  .quick-link-icon {
+    font-size: 2.5rem;
+  }
+
+  .quick-link-card h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    height: 350px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
