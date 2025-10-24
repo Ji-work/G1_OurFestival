@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Whispers of Light | หมวดหมู่ </title>
+
+  <!-- 🔗 External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- ✅ Bootstrap (optional) -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+  <style>
+    .page-content {
+  width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  display: inline-block; /* ให้เรียงต่อกัน */
+  transition: transform 0.2s;
+  vertical-align: top;
+}
+
+.page-content:hover {
+  transform: translateY(-5px);
+}
+
+.page-content img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.info-content {
+  padding: 15px;
+}
+
+.btns {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ef4444;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: background 0.3s;
+}
+
+.btns:hover {
+  background: #dc2626;
+}
+
+  </style>
+
+</head>
+
+<body>
+  <!-- 🧭 Navbar (ใช้เหมือนกันทุกหน้า) -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Whisper of Light</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+            <li class="nav-item"><a class="nav-link" href="booths.html">ร้านค้า</a></li>
+            <li class="nav-item"><a class="nav-link" href="registration.html">ลงทะเบียน</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">แสดงความคิดเห็น</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main class="container my-5">
+        <a href="booth.html" class="btn btn-outline-dark mb-4"><i class="fas fa-arrow-left"></i> กลับสู่แผงลอยเกม</a>
+
+    <!-- ✏️ พื้นที่สำหรับเนื้อหาของแต่ละคน -->
+    <center>
+    <div class="page-content">
+      <img src="\best\img\ร้านเอโดะมาจิ.png" alt="ร้านเอโดะมาจิ"/>
+      <div class="info-content">
+        <section class="page-header text-center mb-4">
+            <h1 class="fw-bold">[Edo Machi]</h1>
+            <p class="text-muted">ร้าน Edo Machi (เอโดะ มาจิ) ทุกเมนูปรุงด้วยรสชาติจัดจ้านตามแบบฉบับอาหารริมทางญี่ปุ่น ซึ่งเป็นรสชาติที่คนญี่ปุ่นคุ้นเคยในงานเทศกาล</p></section>
+        <a href="booth3.html" class="btns">รายละเอียด</a>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="page-content">
+      <img src="\best\img\ร้านkakitai.png" alt="ร้านkakitai"/>
+      <div class="info-content">
+        <section class="page-header text-center mb-4">
+            <h1 class="fw-bold">[kaki tai]</h1>
+            <p class="text-muted">ชื่อร้าน "Kaki Tai" มาจากการรวมชื่อขนมและเครื่องดื่มหลักของร้าน คือ คากิโกริ และ ไทยากิ เพื่อสื่อถึงเมนูหลักที่พร้อมมอบความสุขและความสดชื่นให้กับทุกคน</p></section>
+        <a href="booth4.html" class="btns">รายละเอียด</a>
+      </div>
+    </div>
+    <br><br>
+  </main>
+
+  <!-- 📞 Footer (ใช้เหมือนกันทุกหน้า) -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© Whisper of Light | CS@Thammasat University</p>
+    <p class="small">Contact: Whisperoflight@tu.ac.th</p>
+  </footer>
+
+</body>
+</html>
