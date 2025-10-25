@@ -15,21 +15,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        /* CSS ที่กำหนดเองสำหรับ Card และสีหลักของเทศกาล (Taberu Style) */
         :root {
-            --primary-color: #BC002B; /* สีแดงส้มหลัก */
-            --bg-light: #F7E9DE; /* สีพื้นหลังอ่อน */
-            --text-dark: #2c3e50; /* สีข้อความเข้ม */
+            --primary-color: #BC002B;
+            --bg-light: #F7E9DE; 
+            --text-dark: #2c3e50; 
         }
 
-        /* ปรับสไตล์ Card ให้เข้ากับสีเทศกาล */
         .custom-card {
             border: none;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
-            height: 100%; /* สำคัญสำหรับ Grid */
+            height: 100%; 
             border-bottom: 5px solid var(--primary-color);
         }
         .custom-card:hover {
@@ -37,10 +35,9 @@
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
         }
 
-        /* Image Styling */
         .card-image {
             width: 100%;
-            height: 600px; /* ปรับความสูงตามที่คุณแนะนำ */
+            height: 600px; 
             overflow: hidden;
             border-bottom: 1px solid #ddd;
         }
@@ -54,22 +51,21 @@
             transform: scale(1.05);
         }
         
-        /* Card Content */
         .card-title {
             color: var(--text-dark);
             font-weight: 700;
         }
 
-        /* Header Style for Theme */
         .page-header h1 {
             color: var(--primary-color);
-            font-family: 'Playfair Display', serif; /* ถ้ามี font นี้จะดูพรีเมียมขึ้น */
+            font-family: 'Playfair Display', serif; 
             font-size: 2.5rem;
         }
     </style>
 </head>
 
 <body class="bg-light"> 
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
@@ -147,6 +143,7 @@
         </section>
     </main>
 
+    <!-- footer -->
     <footer class="bg-dark text-white text-center py-3 mt-5">
         © 2025 Whispers of Light. Crafted with love and luminescence.
     </footer>
