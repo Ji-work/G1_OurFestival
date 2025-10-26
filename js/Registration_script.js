@@ -174,10 +174,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // c. ฟังก์ชันสำหรับจัดเก็บข้อมูลผู้เข้าเยี่ยมชมทั้งหมด
-    function saveRegistration(data) {
-        const existingData = localStorage.getItem('fairVisitors');
-        let visitors = existingData ? JSON.parse(existingData) : [];
-        visitors.push(data);
-        localStorage.setItem('fairVisitors', JSON.stringify(visitors));
-    }
+function saveRegistration(data) {
+    console.log('--- RUNNING SAVE REGISTRATION ---'); // 👈 เพิ่ม Log 1
+    
+    // 1. อ่านข้อมูลเดิม
+    const existingData = localStorage.getItem('fairVisitors');
+    console.log('Existing Data:', existingData); // 👈 เพิ่ม Log 2: ดูว่าข้อมูลเดิมมีอะไรบ้าง
+    
+    // 2. แปลงข้อมูล
+    let visitors = existingData ? JSON.parse(existingData) : [];
+    
+    // 3. เพิ่มข้อมูลใหม่
+    visitors.push(data);
+    
+    // 4. บันทึกกลับคืน Local Storage
+    localStorage.setItem('fairVisitors', JSON.stringify(visitors));
+    
+    console.log('New Data Saved Successfully. Total visitors:', visitors.length); // 👈 เพิ่ม Log 3
+}
 });
