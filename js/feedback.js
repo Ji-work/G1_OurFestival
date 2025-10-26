@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // บันทึกกลับลง localStorage
     localStorage.setItem("feedbackDataAll", JSON.stringify(oldData));
 
-    // ไปหน้า summary
     window.location.href = "feedback_summary.html";
   });
 });
