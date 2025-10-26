@@ -42,7 +42,7 @@
 
 ### 🕯️ 6. สรธร แกะนำพาสุข (Sorathon Kaenampasuk)
 - 🧾 **Student ID:** 6609614828  
-- 🎯 **Role:** Registration + Slides  
+- 🎯 **Role:** Registration Page + Slides  
 - 📧 **Contact:** sorathon.kae@dome.tu.ac.th  
 
 ---
