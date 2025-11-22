@@ -276,7 +276,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+const currentPage = window.location.pathname.split("/").pop() || "index.HTML";
 document.querySelectorAll(".nav-link").forEach((link) => {
   if (link.getAttribute("href") === currentPage) {
     link.classList.add("active");
