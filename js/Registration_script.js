@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             saveRegistration(formData);
             
             // นำไปยังหน้าสรุป (summary.html)
-            window.location.href = 'summary.html';
+            form.submit();
         } else {
             alert('กรุณาตรวจสอบข้อมูลที่ยังไม่สมบูรณ์และข้อความ Error สีแดง');
         }
