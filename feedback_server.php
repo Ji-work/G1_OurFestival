@@ -1,9 +1,9 @@
 <?php
 echo "<h2>ผลการส่งแบบฟอร์ม Feedback (จาก Server)</h2>";
 
-if (!empty($_REQUEST)) {
+if (!empty($_POST)) {
     echo "<ul>";
-    foreach ($_REQUEST as $key => $value) {
+    foreach ($_POST as $key => $value) {
         echo "<li><b>" . htmlspecialchars($key) . ":</b> "
              . htmlspecialchars($value) . "</li>";
     }

@@ -1,10 +1,9 @@
 <?php
 echo "<h2>ผลการลงทะเบียนจาก Server</h2>";
 
-if (!empty($_REQUEST)) {
+if (!empty($_POST)) {
     echo "<ul>";
-    foreach ($_REQUEST as $key => $value) {
-        // ถ้า interests เป็น array (จาก checkbox) ให้ join เป็น string
+    foreach ($_POST as $key => $value) {
         if (is_array($value)) {
             $value = implode(", ", $value);
         }
